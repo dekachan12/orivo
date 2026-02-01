@@ -18,13 +18,13 @@
     header {
       background: #2d6a4f;
       color: white;
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 40px;
+      font-size: 42px;
     }
 
     header p {
@@ -32,10 +32,11 @@
       margin-top: 10px;
     }
 
+    /* Tombol */
     .btn {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
+      margin: 15px 8px 0;
+      padding: 12px 26px;
       background: #52b788;
       color: white;
       text-decoration: none;
@@ -46,6 +47,15 @@
 
     .btn:hover {
       background: #40916c;
+    }
+
+    /* Tombol Shopee */
+    .shopee {
+      background: #ff5722;
+    }
+
+    .shopee:hover {
+      background: #e64a19;
     }
 
     section {
@@ -59,6 +69,7 @@
       margin-bottom: 40px;
     }
 
+    /* Menu */
     .menu {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -84,75 +95,68 @@
       background: #1b4332;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      margin-top: 40px;
     }
   </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
   <h1>ORIVO</h1>
   <p>Pure Taste. Real Vibes.</p>
 
- <a href="https://wa.me/6281260136105" class="btn">
-  Pesan via WhatsApp
-</a>
+  <a href="https://wa.me/6281260136105" class="btn" target="_blank">
+    Pesan via WhatsApp
+  </a>
 
-<a href="LINK_SHOPEEFOOD_KAMU" class="btn shopee">
-  Order via ShopeeFood
-  .shopee {
-  background: #ff5722;
-  margin-left: 10px;
-}
-
-.shopee:hover {
-  background: #e64a19;
-}
-
-</a>
-
+  <a href="LINK_SHOPEEFOOD_KAMU" class="btn shopee" target="_blank">
+    Order via ShopeeFood
   </a>
 </header>
 
+<!-- MENU -->
 <section>
   <h2>Menu Favorit</h2>
 
   <div class="menu">
 
     <div class="card">
-  <img src="kopisusu.jpg" alt="Kopi Susu Aren">
-  <h3>Kopi Susu Aren</h3>
-  <p>Perpaduan kopi dan susu creamy.</p>
-</div>
+      <img src="kopisusu.jpg" alt="Kopi Susu Aren">
+      <h3>Kopi Susu Aren</h3>
+      <p>Perpaduan kopi dan susu creamy.</p>
+    </div>
 
-<div class="card">
-  <img src="matcha.jpg" alt="Matcha Latte">
-  <h3>Matcha Latte</h3>
-  <p>Matcha premium segar.</p>
-</div>
+    <div class="card">
+      <img src="matcha.jpg" alt="Matcha Latte">
+      <h3>Matcha Latte</h3>
+      <p>Matcha premium segar.</p>
+    </div>
 
-<div class="card">
-  <img src="strawberry.jpg" alt="Strawberry Milk">
-  <h3>Strawberry Milk</h3>
-  <p>Segar dan manis alami.</p>
-</div>
+    <div class="card">
+      <img src="strawberry.jpg" alt="Strawberry Milk">
+      <h3>Strawberry Milk</h3>
+      <p>Segar dan manis alami.</p>
+    </div>
 
-<div class="card">
-  <img src="matcha-strawberry.jpg" alt="Matcha Strawberry">
-  <h3>Matcha Strawberry</h3>
-  <p>Perpaduan unik matcha & stroberi.</p>
-</div>
+    <div class="card">
+      <img src="matcha-strawberry.jpg" alt="Matcha Strawberry">
+      <h3>Matcha Strawberry</h3>
+      <p>Perpaduan unik matcha & stroberi.</p>
+    </div>
 
-<div class="card">
-  <img src="blackcoffee.jpg" alt="Black Coffee">
-  <h3>Black Coffee</h3>
-  <p>Kopi hitam strong & nikmat.</p>
-</div>
+    <div class="card">
+      <img src="blackcoffee.jpg" alt="Black Coffee">
+      <h3>Black Coffee</h3>
+      <p>Kopi hitam strong & nikmat.</p>
+    </div>
 
   </div>
 </section>
 
+<!-- ABOUT -->
 <section>
   <h2>Tentang Orivo</h2>
 
@@ -163,10 +167,10 @@
   </p>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 Orivo Drink | Instagram: @orivo.id</p>
 </footer>
 
 </body>
 </html>
-
