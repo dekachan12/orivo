@@ -1,178 +1,275 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Orivo - Pure Taste. Real Vibes.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orivo - Order Online</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f6fff8;
-      color: #1b4332;
-    }
+<style>
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:#f6fff8;
+color:#1b4332;
+}
 
-    header {
-      background: #2d6a4f;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
+/* HEADER */
+header{
+background:#2d6a4f;
+color:#fff;
+padding:40px 20px;
+text-align:center;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 42px;
-    }
+header h1{margin:0;font-size:40px;}
+header p{margin:8px 0 15px;}
 
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
+.btn{
+display:inline-block;
+padding:10px 22px;
+background:#52b788;
+color:#fff;
+text-decoration:none;
+border-radius:25px;
+font-weight:600;
+margin:5px;
+}
 
-    /* Tombol */
-    .btn {
-      display: inline-block;
-      margin: 15px 8px 0;
-      padding: 12px 26px;
-      background: #52b788;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
+.btn:hover{background:#40916c;}
 
-    .btn:hover {
-      background: #40916c;
-    }
+.shopee{background:#ff5722;}
+.shopee:hover{background:#e64a19;}
 
-    /* Tombol Shopee */
-    .shopee {
-      background: #ff5722;
-    }
+/* MENU */
+section{
+padding:40px 15px;
+max-width:1100px;
+margin:auto;
+}
 
-    .shopee:hover {
-      background: #e64a19;
-    }
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
 
-    section {
-      padding: 50px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+.card{
+background:#fff;
+border-radius:15px;
+padding:15px;
+text-align:center;
+box-shadow:0 3px 8px rgba(0,0,0,.1);
+}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.card img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:10px;
+}
 
-    /* Menu */
-    .menu {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
+.card h3{margin:10px 0 5px;}
 
-    .card {
-      background: white;
-      border-radius: 15px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+.price{font-weight:600;color:#2d6a4f;}
 
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
+.card button{
+margin-top:8px;
+padding:8px 18px;
+border:none;
+background:#2d6a4f;
+color:#fff;
+border-radius:20px;
+cursor:pointer;
+}
 
-    footer {
-      background: #1b4332;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 40px;
-    }
-  </style>
+.card button:hover{background:#1b4332;}
+
+/* CART */
+#cart{
+background:#fff;
+padding:20px;
+border-radius:15px;
+box-shadow:0 3px 8px rgba(0,0,0,.1);
+margin-top:30px;
+}
+
+#cart h2{text-align:center;}
+
+.cart-item{
+display:flex;
+justify-content:space-between;
+margin:8px 0;
+}
+
+.cart-item span{font-size:14px;}
+
+.checkout{
+text-align:center;
+margin-top:15px;
+}
+
+.checkout button{
+padding:10px 25px;
+border:none;
+background:#25D366;
+color:#fff;
+border-radius:25px;
+font-weight:600;
+cursor:pointer;
+}
+
+.checkout button:hover{opacity:.9}
+
+/* FOOTER */
+footer{
+background:#1b4332;
+color:#fff;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
 </head>
 
 <body>
 
 <!-- HEADER -->
 <header>
-  <h1>ORIVO</h1>
-  <p>Pure Taste. Real Vibes.</p>
+<h1>ORIVO</h1>
+<p>Pure Taste. Real Vibes.</p>
 
-  <a href="https://wa.me/6281260136105" class="btn" target="_blank">
-    Pesan via WhatsApp
-  </a>
-
-  <a href="https://shopee.co.id/universal-link/now-food/shop/22245140" class="btn shopee" target="_blank">
-    Order via ShopeeFood
-  </a>
+<a href="https://wa.me/6281260136105" class="btn">Chat Admin</a>
+<a href="LINK_SHOPEEFOOD" class="btn shopee">ShopeeFood</a>
 </header>
 
 <!-- MENU -->
 <section>
-  <h2>Menu Favorit</h2>
 
-  <div class="menu">
+<h2 style="text-align:center">Menu Minuman</h2>
 
-    <div class="card">
-      <img src="kopisusu.jpg" alt="Kopi Susu Aren">
-      <h3>Kopi Susu Aren</h3>
-      <p>Perpaduan kopi dan susu creamy.</p>
-    </div>
+<div class="menu">
 
-    <div class="card">
-      <img src="matcha.jpg" alt="Matcha Latte">
-      <h3>Matcha Latte</h3>
-      <p>Matcha premium segar.</p>
-    </div>
+<!-- ITEM -->
+<div class="card">
+<img src="kopisusu.jpg">
+<h3>Kopi Susu Aren</h3>
+<p class="price">Rp15.000</p>
+<button onclick="addCart('Kopi Susu Aren',15000)">Tambah</button>
+</div>
 
-    <div class="card">
-      <img src="strawberry.jpg" alt="Strawberry Milk">
-      <h3>Strawberry Milk</h3>
-      <p>Segar dan manis alami.</p>
-    </div>
+<div class="card">
+<img src="matcha.jpg">
+<h3>Matcha Latte</h3>
+<p class="price">Rp17.000</p>
+<button onclick="addCart('Matcha Latte',17000)">Tambah</button>
+</div>
 
-    <div class="card">
-      <img src="matcha-strawberry.jpg" alt="Matcha Strawberry">
-      <h3>Matcha Strawberry</h3>
-      <p>Perpaduan unik matcha & stroberi.</p>
-    </div>
+<div class="card">
+<img src="strawberry.jpg">
+<h3>Strawberry Milk</h3>
+<p class="price">Rp16.000</p>
+<button onclick="addCart('Strawberry Milk',16000)">Tambah</button>
+</div>
 
-    <div class="card">
-      <img src="blackcoffee.jpg" alt="Black Coffee">
-      <h3>Black Coffee</h3>
-      <p>Kopi hitam strong & nikmat.</p>
-    </div>
+<div class="card">
+<img src="matcha-strawberry.jpg">
+<h3>Matcha Strawberry</h3>
+<p class="price">Rp18.000</p>
+<button onclick="addCart('Matcha Strawberry',18000)">Tambah</button>
+</div>
 
-  </div>
-</section>
+<div class="card">
+<img src="blackcoffee.jpg">
+<h3>Black Coffee</h3>
+<p class="price">Rp12.000</p>
+<button onclick="addCart('Black Coffee',12000)">Tambah</button>
+</div>
 
-<!-- ABOUT -->
-<section>
-  <h2>Tentang Orivo</h2>
+</div>
 
-  <p style="text-align:center;max-width:700px;margin:auto;">
-    Orivo hadir dengan konsep minuman kopi & matcha berkualitas
-    dengan harga terjangkau untuk semua kalangan.
-    Kami percaya setiap tegukan membawa vibe positif.
-  </p>
+<!-- CART -->
+<div id="cart">
+
+<h2>Keranjang</h2>
+<div id="cartItems"></div>
+
+<div class="checkout">
+<button onclick="checkout()">Checkout WhatsApp</button>
+</div>
+
+</div>
+
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Orivo Drink | Instagram: @orivo.id</p>
+<p>© 2026 Orivo Drink</p>
 </footer>
+
+<script>
+
+let cart = [];
+
+function addCart(name, price){
+
+let item = cart.find(i => i.name === name);
+
+if(item){
+item.qty++;
+}else{
+cart.push({name,price,qty:1});
+}
+
+renderCart();
+}
+
+function renderCart(){
+
+let html = "";
+let total = 0;
+
+cart.forEach(item => {
+
+let sub = item.price * item.qty;
+total += sub;
+
+html += `
+<div class="cart-item">
+<span>${item.name} x${item.qty}</span>
+<span>Rp${sub.toLocaleString()}</span>
+</div>
+`;
+
+});
+
+html += `<hr><b>Total: Rp${total.toLocaleString()}</b>`;
+
+document.getElementById("cartItems").innerHTML = html;
+}
+
+function checkout(){
+
+if(cart.length===0){
+alert("Keranjang masih kosong!");
+return;
+}
+
+let text = "Halo Orivo, saya mau pesan:%0A";
+
+cart.forEach(item=>{
+text += `- ${item.name} x${item.qty}%0A`;
+});
+
+text += "%0ATerima kasih 🙏";
+
+let url = "https://wa.me/6281260136105?text="+text;
+
+window.open(url,"_blank");
+}
+
+</script>
 
 </body>
 </html>
-
-
